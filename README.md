@@ -11,4 +11,5 @@ Sample app that uses [Bootstrap](http://getbootstrap.com) + [will_paginate](http
 
     heroku create --stack cedar
     heroku config:add RACK_ENV=production
-    git ps heroku
+    git push heroku master
+
