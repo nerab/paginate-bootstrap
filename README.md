@@ -1,13 +1,14 @@
-Bootstrap + will_paginate template. Based on [Minimal Sinatra template](https://github.com/rkh/sinatra-template).
+# Paginate Bootstrap
 
-Run:
+Sample app that uses [Bootstrap](http://getbootstrap.com) + [will_paginate](http://github.com/mislav/will_paginate), based on the [Minimal Sinatra template](https://github.com/rkh/sinatra-template).
+
+## Run
 
     bundle install
     foreman start
 
-Deploy to heroku:
+## Deploy to Heroku:
 
     heroku create --stack cedar
     heroku config:add RACK_ENV=production
     git ps heroku
-
