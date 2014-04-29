@@ -6,8 +6,6 @@ require 'will_paginate/array'
 
 require_relative 'lib/paginate-bootstrap'
 include PaginateBootstrap
-also_reload 'lib/**'
-also_reload '*.rb'
 
 def categories
   [Company, Product]
