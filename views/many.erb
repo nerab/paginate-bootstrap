@@ -1,0 +1,7 @@
+<p>There is a total of <%= @all.size %> <%= @type %>:</p>
+<ul>
+<% @paginated.each do |c| %>
+  <li><a href="<%= url(c.path) %>"><%= c.name %></a></li>
+<% end %>
+</ul>
+<%= will_paginate @paginated, renderer: BootstrapPagination::Sinatra %>
