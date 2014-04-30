@@ -37,3 +37,15 @@ categories.each do |category|
     erb :many
   end
 end
+
+not_found do
+  @title = 'Oops...'
+  @message = 'Not found'
+  erb :error
+end
+
+error do
+  @title = 'Oops...'
+  @message = env['sinatra.error']
+  erb :error
+end
