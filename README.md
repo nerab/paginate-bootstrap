@@ -1,6 +1,8 @@
 # Paginate Bootstrap
 
-Sample app that uses [Bootstrap](http://getbootstrap.com) + [will_paginate](http://github.com/mislav/will_paginate), based on the [Minimal Sinatra template](https://github.com/rkh/sinatra-template).
+Tiny [Sinatra](http://sinatrarb.com) sample app that uses [Bootstrap](http://getbootstrap.com) + [will_paginate](http://rubygems.org/gems/will_paginate) through [will_paginate-bootstrap](http://rubygems.org/gems/will_paginate-bootstrap).
+
+The app is based on the [Minimal Sinatra template](https://github.com/rkh/sinatra-template).
 
 The interesting files are the [app](app.rb) and the [view](views/many.erb).
 
