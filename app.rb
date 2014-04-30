@@ -16,13 +16,15 @@ def current?(path = '')
 end
 
 get '/' do
+  @title = 'Home'
   erb :index
 end
 
 categories.each do |c|
   get "#{c.path}/:id" do |id|
     @one = c.by_id(id)
-    @title = @type = c.singular
+    @type = c.singular
+    @title = "#{@type} Details"
     pass unless @one
     erb :one
   end
