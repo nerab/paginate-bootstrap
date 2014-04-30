@@ -2,7 +2,7 @@
 
 Sample app that uses [Bootstrap](http://getbootstrap.com) + [will_paginate](http://github.com/mislav/will_paginate), based on the [Minimal Sinatra template](https://github.com/rkh/sinatra-template).
 
-The interesting files are the [app](blob/master/app.rb) and the [view](blob/master/views/many.erb).
+The interesting files are the [app](app.rb) and the [view](views/many.erb).
 
 ## Run
 
