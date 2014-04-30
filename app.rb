@@ -20,19 +20,19 @@ get '/' do
   erb :index
 end
 
-categories.each do |c|
-  get "#{c.path}/:id" do |id|
-    @one = c.by_id(id)
-    @type = c.singular
-    @title = "#{@type} Details"
+categories.each do |category|
+  get "#{category.path}/:id" do |id|
+    @one = category.by_id(id)
     pass unless @one
+    @type = category.singular
+    @title = @one.name
     erb :one
   end
 
-  get "/#{c.plural}" do
-    @all = c.all
-    @title = c.plural.capitalize
-    @type = c.plural
+  get "/#{category.plural}" do
+    @all = category.all
+    @title = category.plural.capitalize
+    @type = category.plural
     @paginated = @all.sort{|l,r| l.name <=> r.name}.paginate(:page => params[:page], :per_page => 5)
     erb :many
   end
