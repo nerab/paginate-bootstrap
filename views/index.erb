@@ -3,4 +3,10 @@
     This sample app shows how to use them together.
 </p>
 
-<p>Use the main navigation to see a paginated list.</p>
+<p>Check out the following lists:</p>
+
+<ul>
+  <% categories.each do |c| %>
+    <li class="<%= 'active' if current?(c.plural) %>"><a href="<%= url(c.plural) %>"><%= c.plural.capitalize %></a></li>
+  <% end %>
+</ul>
